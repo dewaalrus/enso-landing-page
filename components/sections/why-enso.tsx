@@ -1,6 +1,7 @@
 'use client'
 import { FadeIn } from '@/components/motion/fade-in'
 import { StaggerContainer, StaggerItem } from '@/components/motion/stagger-children'
+import { User, ArrowLeftRight, PenOff } from 'lucide-react'
 
 const principles = [
   {
@@ -9,32 +10,32 @@ const principles = [
     body: 'Selling is stressful. Enso replaces the frantic 5-tab scramble with a single calm surface that tells you exactly what matters, right before you need it.',
   },
   {
-    name: 'Opinionated, not flexible',
-    subtitle: 'DECISIONS, NOT OPTIONS',
-    body: 'Notion gives you building blocks. Salesforce gives you settings pages. Enso makes decisions for you. Every workflow is intentional. Every element earns its place.',
+    name: 'Personalized from day one',
+    subtitle: 'READY-TO-GO, NOT CONFIGURE-TO-START',
+    body: 'Connect once. Enso reads your history and builds a graph tuned to your accounts, your relationships, your role. No setup wizard. No blank slate. Value in the first session.',
   },
   {
-    name: 'Slow dopamine, not noise',
-    subtitle: 'BUILT FOR FOCUS',
-    body: 'Reps come back because Enso brings calm to what is an emotionally tough job. Not another feed demanding attention. A tool that makes you feel prepared.',
+    name: 'Best practices baked in',
+    subtitle: 'DECISIONS, NOT OPTIONS',
+    body: 'Note-takers give you transcripts. CRMs give you settings pages. Enso makes the decisions so reps do not have to. Prep, meet, follow up. Every workflow is intentional.',
   },
 ]
 
 const features = [
   {
-    icon: '👥',
-    title: 'Collaborative pods',
-    desc: 'Share with your team while it feels like your own space.',
+    icon: User,
+    title: 'Built for the rep, not the dashboard',
+    desc: 'Empowerment over monitoring. Reps adopt it because it helps them.',
   },
   {
-    icon: '🔄',
+    icon: ArrowLeftRight,
     title: 'Handoffs without amnesia',
     desc: 'Context persists when reps change. The graph stays.',
   },
   {
-    icon: '💪',
-    title: 'Built for the rep',
-    desc: 'Empowerment over monitoring. Reps adopt it because it helps them.',
+    icon: PenOff,
+    title: 'Zero manual data entry',
+    desc: 'The graph builds itself from your existing workflow. Nothing to fill in.',
   },
 ]
 
@@ -48,8 +49,8 @@ export function WhyEnso() {
               Why Enso
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground">
-              Calm. Focused.{' '}
-              <span className="text-accent">Opinionated.</span>
+              Built to earn{' '}
+              <span className="text-accent italic">daily habit.</span>
             </h2>
           </div>
         </FadeIn>
@@ -76,8 +77,8 @@ export function WhyEnso() {
           <div className="grid md:grid-cols-3 gap-5 mt-8">
             {features.map((f) => (
               <div key={f.title} className="flex gap-3">
-                <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shrink-0 text-lg">
-                  {f.icon}
+                <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shrink-0">
+                  <f.icon className="size-4 text-muted-foreground" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold mb-0.5">{f.title}</p>

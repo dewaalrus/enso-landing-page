@@ -2,20 +2,21 @@
 import { EnsoIcon } from '@/components/enso-icon'
 import { FadeIn } from '@/components/motion/fade-in'
 import { StaggerContainer, StaggerItem } from '@/components/motion/stagger-children'
+import { Mail, CalendarDays, Mic, Database, FileText, Activity, Send } from 'lucide-react'
 
 const loopSteps = ['Prep', 'Meet', 'Process', 'Follow-up']
 
 const sources = [
-  { icon: '✉', label: 'Email' },
-  { icon: '📅', label: 'Calendar' },
-  { icon: '▶', label: 'Meetings' },
-  { icon: '🗃', label: 'Salesforce' },
+  { icon: Mail, label: 'Email' },
+  { icon: CalendarDays, label: 'Calendar' },
+  { icon: Mic, label: 'Meetings' },
+  { icon: Database, label: 'Salesforce' },
 ]
 
 const surfaces = [
-  { icon: '📝', label: 'Prep Briefs' },
-  { icon: '📈', label: 'Signals' },
-  { icon: '✈', label: 'Follow-ups' },
+  { icon: FileText, label: 'Prep Briefs' },
+  { icon: Activity, label: 'Signals' },
+  { icon: Send, label: 'Follow-ups' },
 ]
 
 export function Solution() {
@@ -58,7 +59,7 @@ export function Solution() {
             {sources.map((s) => (
               <StaggerItem key={s.label} direction="left">
                 <div className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border bg-background text-sm font-medium">
-                  <span className="text-base">{s.icon}</span>
+                  <s.icon className="size-4 text-muted-foreground" />
                   {s.label}
                 </div>
               </StaggerItem>
@@ -89,7 +90,7 @@ export function Solution() {
             {surfaces.map((s) => (
               <StaggerItem key={s.label} direction="right">
                 <div className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border bg-background text-sm font-medium">
-                  <span className="text-base">{s.icon}</span>
+                  <s.icon className="size-4 text-muted-foreground" />
                   {s.label}
                 </div>
               </StaggerItem>
@@ -101,7 +102,7 @@ export function Solution() {
         <FadeIn delay={0.3}>
           <div className="text-center">
             <span className="inline-block bg-ai-accent-mist rounded-full px-6 py-2.5 text-sm font-medium">
-              3&ndash;8&times; per day, per AE. Every cycle compounds the graph.
+              Used 8 times per day, per AE. Every cycle compounds the graph.
             </span>
           </div>
         </FadeIn>

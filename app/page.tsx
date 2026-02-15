@@ -1,12 +1,9 @@
 import { Nav } from '@/components/nav'
 import { Hero } from '@/components/sections/hero'
-import { SocialProof } from '@/components/sections/social-proof'
 import { Problem } from '@/components/sections/problem'
 import { Solution } from '@/components/sections/solution'
 import { ProductShowcase } from '@/components/sections/product-showcase'
 import { WhyEnso } from '@/components/sections/why-enso'
-import { WhyNow } from '@/components/sections/why-now'
-import { Team } from '@/components/sections/team'
 import { WhatEnsoIs } from '@/components/sections/what-enso-is'
 import { FAQ } from '@/components/sections/faq'
 import { DesignPartner } from '@/components/sections/design-partner'
@@ -18,13 +15,10 @@ export default function LandingPage() {
       <Nav />
       <main>
         <Hero />
-        <SocialProof />
         <Problem />
         <Solution />
         <ProductShowcase />
         <WhyEnso />
-        <WhyNow />
-        <Team />
         <WhatEnsoIs />
         <section id="faq">
           <FAQ />

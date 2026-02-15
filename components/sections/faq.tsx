@@ -7,34 +7,24 @@ import { cn } from '@/lib/utils'
 
 const faqs = [
   {
-    question: 'What is the time commitment for design partners?',
-    answer:
-      'Minimal. We ask for async Slack feedback when you have thoughts, plus one 15-minute call per month. We know your time is valuable. That is literally why we are building Enso.',
-  },
-  {
     question: 'What happens to my email and calendar data?',
     answer:
       'Your data stays yours. Enso reads your Gmail and Google Calendar through OAuth with read-only permissions. We never store raw email content. We extract relationship signals and discard the rest. We are building toward SOC 2 compliance.',
   },
   {
-    question: 'Do I need Salesforce to use Enso?',
+    question: 'Do I need a CRM to use Enso?',
     answer:
-      'No. Enso works entirely from Gmail and Google Calendar. If you use Salesforce, great. Enso complements it by surfacing context your CRM does not capture. If you do not, Enso fills the gap.',
+      'No. Enso works from Gmail and Google Calendar on day one. CRM integration is on our roadmap and we are looking for companies to co-design that experience with. In the meantime, Enso surfaces the relationship context your CRM never captures.',
   },
   {
-    question: 'When will I get access after applying?',
+    question: 'What do design partners get?',
     answer:
-      'We review applications within 48 hours. If you are a fit, we will onboard you within a week. Design partners get early access before our public launch and help shape the product roadmap.',
+      'Founding member pricing locked in permanently, early access before public launch, and a direct line to shape the product roadmap. We are only taking 15 partners to keep the feedback loop tight.',
   },
   {
-    question: 'What does \u201Cfree forever\u201D actually mean?',
+    question: 'How is Enso different from call recorders?',
     answer:
-      'Design partners lock in free access to Enso permanently. No catch, no expiration. When we launch paid plans (expected to be $99\u2013299/month), your account stays free as a thank-you for helping us build the right product.',
-  },
-  {
-    question: 'How is this different from Gong or LinkedIn Sales Nav?',
-    answer:
-      'Gong records calls but does not help you prepare or follow up. Enso covers the full loop: prep, recording, processing, and follow-ups. All powered by your relationship graph. LinkedIn Sales Nav gives you public profiles. Enso gives you your actual conversation history. And unlike Gong, Enso records through system audio with no bot joining your call.',
+      'Call recorders give you transcripts after the meeting. Enso gives you intelligence before, during, and after. Prep briefs before every call. Bot-free recording through system audio. Follow-ups drafted automatically. All grounded in your relationship graph.',
   },
 ]
 

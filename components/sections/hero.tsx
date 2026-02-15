@@ -47,7 +47,7 @@ export function Hero() {
               <h1 className="font-serif text-3xl md:text-4xl lg:text-[44px] tracking-tight leading-[1.15] text-foreground">
                 Relationship intelligence that{' '}
                 <span className="text-accent">
-                  compounds with every interaction.
+                  builds itself and survives change.
                 </span>
               </h1>
             </FadeIn>
@@ -75,13 +75,6 @@ export function Hero() {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.7}>
-              <p className="mt-5 text-sm text-muted-foreground">
-                Built by former{' '}
-                <span className="text-foreground font-medium">Asana</span>{' '}
-                leaders
-              </p>
-            </FadeIn>
           </div>
 
           {/* Right: Meeting Prep Mockup */}

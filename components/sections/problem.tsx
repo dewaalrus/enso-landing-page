@@ -11,11 +11,13 @@ const stats = [
     number: '29%',
     label: 'of rep time is actually spent selling',
     source: 'Salesforce State of Sales',
+    sourceUrl: 'https://www.salesforce.com/resources/research-reports/state-of-sales/',
   },
   {
     number: '79%',
     label: 'of deal context never enters a CRM',
     source: 'Forrester Research',
+    sourceUrl: 'https://www.forrester.com/research/',
   },
 ]
 
@@ -89,13 +91,13 @@ export function Problem() {
           {stats.map((stat) => (
             <StaggerItem key={stat.number}>
               <div className="rounded-xl border border-border bg-card p-7 text-center">
-                <p className="font-serif text-5xl md:text-6xl font-medium text-accent leading-none mb-2">
+                <p className="font-serif text-5xl md:text-6xl font-medium text-destructive leading-none mb-2">
                   {stat.number}
                 </p>
                 <p className="text-sm text-foreground">{stat.label}</p>
-                <p className="text-[11px] text-muted-foreground mt-1">
+                <a href={stat.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[11px] text-muted-foreground mt-1 hover:text-foreground transition-colors inline-block">
                   {stat.source}
-                </p>
+                </a>
               </div>
             </StaggerItem>
           ))}
@@ -104,10 +106,10 @@ export function Problem() {
         {/* Narrative */}
         <FadeIn delay={0.2}>
           <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed max-w-2xl mx-auto">
-            Every email, call, and meeting generates relationship intelligence.
-            But today it sits in silos: Gmail, Salesforce, Gong, calendar
-            invites. No connecting schema. AI SDRs can sequence. Call
-            analytics can transcribe. But without a structured relationship
+            Every email, call, and meeting generates relationship
+            intelligence. Today it sits in silos. Gmail. Salesforce. Gong.
+            Calendar invites. No connecting schema. AI can sequence outreach.
+            It can transcribe calls. But without a structured relationship
             graph,{' '}
             <strong className="text-foreground">
               it is a data lake, not intelligence.

@@ -19,18 +19,18 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: "Enso: Relationship Intelligence for GTM Teams",
   description:
-    "Relationship intelligence that compounds with every interaction. Enso builds a living relationship graph from your emails, calls, and meetings. Every rep walks into every meeting prepared.",
+    "Relationship intelligence that builds itself and survives change. Enso builds a living relationship graph from your emails, calls, and meetings. Every rep walks into every meeting prepared.",
   openGraph: {
     title: "Enso: Relationship Intelligence for GTM Teams",
     description:
-      "The connective layer for GTM teams. Relationship intelligence that compounds with every interaction. Built by former Asana leaders.",
+      "The connective layer for GTM teams. Relationship intelligence that builds itself and survives change. Built by Asana GTM and AI teams.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Enso: Relationship Intelligence for GTM Teams",
     description:
-      "Relationship intelligence that compounds. The connective layer for GTM teams. Built by former Asana leaders.",
+      "Relationship intelligence that builds itself and survives change. The connective layer for GTM teams. Built by Asana GTM and AI teams.",
   },
   icons: {
     icon: [
