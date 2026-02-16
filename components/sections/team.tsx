@@ -7,21 +7,19 @@ const founders = [
     initials: 'ED',
     name: 'Ethan DeWaal',
     role: 'Co-founder & CEO',
-    bullets: [
-      'Co-created Asana\u2019s AI Studio product and built the AI GTM motion from scratch',
-      'Asana\u2019s AI product line now growing at 12\u00D7 YoY and 70% QoQ',
-      'Deep expertise in sales workflows, AI product strategy, and go-to-market',
-    ],
+    photo: '/ethan-headshot.png',
+    narrative:
+      'Co-created Asana\u2019s AI Studio and built the AI GTM motion from zero. Felt the prep anxiety before every call. Built workarounds. Then better workarounds. Then started building the real thing.',
+    proof: 'GTM Strategy & Operations at Asana. 12\u00D7 YoY growth on AI product line.',
   },
   {
     initials: 'BG',
     name: 'Ben Graney-Green',
     role: 'Co-founder & CTO',
-    bullets: [
-      'Led Strategic Solution Architecture, scoping custom integrations for Asana\u2019s largest customers',
-      'Built internal AI tooling for the revenue team; rotated onto AI Automations Engineering',
-      'Deep expertise in graph data systems & entity resolution',
-    ],
+    photo: '/ben-headshot.png',
+    narrative:
+      'Led Strategic Solutions Architecture at Asana for 4.5 years, building complex processes for Mag-7 companies. Saw the graph that should exist but doesn\u2019t. Now building the data model every GTM tool needs underneath it.',
+    proof: '10,000+ AI GTM uses per week at Asana. Entity resolution, relationship modeling.',
   },
 ]
 
@@ -35,8 +33,8 @@ export function Team() {
               The Team
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground">
-              Built the AI playbook{' '}
-              <span className="text-accent">at scale.</span>
+              We didn&rsquo;t study this market.{' '}
+              <span className="text-accent">We lived in it.</span>
             </h2>
           </div>
         </FadeIn>
@@ -44,20 +42,24 @@ export function Team() {
         <StaggerContainer staggerDelay={0.15} className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-10">
           {founders.map((f) => (
             <StaggerItem key={f.initials}>
-              <div className="rounded-xl border border-border bg-background p-8 text-center">
-                <div className="w-20 h-20 rounded-full bg-accent/10 text-accent font-serif text-2xl font-medium flex items-center justify-center mx-auto mb-4">
-                  {f.initials}
+              <div className="rounded-xl border border-border bg-background p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src={f.photo}
+                    alt={f.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-border"
+                  />
+                  <div>
+                    <p className="font-serif text-xl font-medium">{f.name}</p>
+                    <p className="text-sm text-accent font-semibold">{f.role}</p>
+                  </div>
                 </div>
-                <p className="font-serif text-xl font-medium">{f.name}</p>
-                <p className="text-sm text-accent font-semibold mb-4">{f.role}</p>
-                <ul className="text-left space-y-2">
-                  {f.bullets.map((b, i) => (
-                    <li key={i} className="flex gap-2 text-[13px] text-muted-foreground leading-snug">
-                      <span className="w-1 h-1 rounded-full bg-accent mt-2 shrink-0" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  {f.narrative}
+                </p>
+                <p className="text-xs text-muted-foreground/70 leading-snug">
+                  {f.proof}
+                </p>
               </div>
             </StaggerItem>
           ))}
@@ -65,13 +67,10 @@ export function Team() {
 
         <FadeIn delay={0.3}>
           <p className="font-serif text-lg text-center max-w-2xl mx-auto mt-10 leading-relaxed">
-            They partnered closely on AI at Asana from opposite sides of the
-            GTM stack: strategy and solutions architecture.{' '}
+            Opposite sides of the GTM stack. Same obsession.{' '}
             <strong>
-              The relationship intelligence layer for GTM does not exist
-              yet.
-            </strong>{' '}
-            They know exactly how to build it.
+              In a market where everyone is building a platform, we are building the one thing that actually compounds.
+            </strong>
           </p>
         </FadeIn>
       </div>

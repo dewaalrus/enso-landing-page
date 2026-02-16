@@ -5,8 +5,8 @@ import { FadeIn } from '@/components/motion/fade-in'
 
 const isItems = [
   'A relationship intelligence layer for your inbox and meetings',
-  'Bot-free meeting recording that feeds your relationship graph',
-  'Prep briefs, transcripts, and follow-ups. Grounded in real history',
+  'On-device meeting recording that feeds your relationship graph',
+  'Prep briefs, transcripts, and agentic follow-ups. Grounded in real history',
   'A graph that compounds with every email, call, and interaction',
 ]
 
@@ -14,6 +14,7 @@ const isNotItems = [
   'Another CRM to update',
   'A generic LinkedIn scraper',
   'A bot that joins your calls and announces itself',
+  'A platform trying to do everything',
   'A replacement for human relationships',
 ]
 

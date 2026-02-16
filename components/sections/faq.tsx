@@ -19,12 +19,12 @@ const faqs = [
   {
     question: 'What do design partners get?',
     answer:
-      'Founding member pricing locked in permanently, early access before public launch, and a direct line to shape the product roadmap. We are only taking 15 partners to keep the feedback loop tight.',
+      'Founding member pricing locked in permanently, early access before public launch, and a direct line to shape the product roadmap. We keep the cohort small so the feedback loop stays tight.',
   },
   {
     question: 'How is Enso different from call recorders?',
     answer:
-      'Call recorders give you transcripts after the meeting. Enso gives you intelligence before, during, and after. Prep briefs before every call. Bot-free recording through system audio. Follow-ups drafted automatically. All grounded in your relationship graph.',
+      'Call recorders give you transcripts after the meeting. Enso gives you intelligence before, during, and after. Prep briefs before every call. On-device recording that never puts a bot in your meeting. Agentic follow-ups drafted and ready to send. All grounded in your relationship graph.',
   },
 ]
 

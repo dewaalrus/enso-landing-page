@@ -184,7 +184,7 @@ export function ProductShowcase() {
               distracted.&rdquo;
             </p>
             <p className="text-sm mt-3 opacity-70">
-              , Design Partner, Enterprise AE
+              Design Partner, Enterprise AE
             </p>
           </div>
         </FadeIn>

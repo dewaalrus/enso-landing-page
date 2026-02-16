@@ -14,13 +14,13 @@ export function Footer() {
 
           {/* Tagline */}
           <p className="text-sm text-muted-foreground text-center">
-            The connective layer for GTM teams.
+            Relationship intelligence that builds itself and survives change.
           </p>
 
           {/* Links */}
           <div className="flex items-center gap-6 text-xs text-muted-foreground/60">
             <a
-              href="mailto:hello@enso.so"
+              href="mailto:ethan@useenso.co"
               className="hover:text-foreground transition-colors"
             >
               Contact

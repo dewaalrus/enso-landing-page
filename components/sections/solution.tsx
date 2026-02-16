@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/motion/fade-in'
 import { StaggerContainer, StaggerItem } from '@/components/motion/stagger-children'
 import { Mail, CalendarDays, Mic, Database, FileText, Activity, Send } from 'lucide-react'
 
-const loopSteps = ['Prep', 'Meet', 'Process', 'Follow-up']
+const loopSteps = ['Prep', 'Record', 'Follow up', 'Graph compounds']
 
 const sources = [
   { icon: Mail, label: 'Email' },
@@ -102,7 +102,7 @@ export function Solution() {
         <FadeIn delay={0.3}>
           <div className="text-center">
             <span className="inline-block bg-ai-accent-mist rounded-full px-6 py-2.5 text-sm font-medium">
-              Used 8 times per day, per AE. Every cycle compounds the graph.
+              Every cycle compounds the graph. Intelligence gets denser, not noisier.
             </span>
           </div>
         </FadeIn>

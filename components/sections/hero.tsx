@@ -54,9 +54,9 @@ export function Hero() {
 
             <FadeIn delay={0.3}>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-                The connective layer for GTM teams. Enso builds a living
-                relationship graph from your emails, calls, and
-                meetings. Every rep walks into every meeting prepared.
+                Enso builds a living relationship graph from your
+                emails, calls, and meetings. Every rep walks into every
+                meeting prepared. Context survives every handoff.
               </p>
             </FadeIn>
 
@@ -221,7 +221,7 @@ export function Hero() {
                     Follow-up drafted
                   </p>
                   <span className="text-[9px] font-semibold uppercase tracking-wide text-accent bg-accent/10 px-1.5 py-0.5 rounded inline-block">
-                    Auto-generated
+                    Agentic
                   </span>
                 </div>
               </motion.div>

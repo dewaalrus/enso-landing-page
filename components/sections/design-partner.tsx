@@ -13,9 +13,6 @@ const benefits = [
   'Direct Slack channel with founders',
 ]
 
-const TOTAL_SPOTS = 15
-const SPOTS_TAKEN = 8
-
 type View = 'intro' | 'form'
 
 export function DesignPartner() {
@@ -40,11 +37,11 @@ export function DesignPartner() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {/* Spot counter */}
+                  {/* Badge */}
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-ai-accent/30 bg-ai-accent/10 mb-4">
                     <span className="w-1.5 h-1.5 rounded-full bg-signal animate-pulse" />
                     <span className="text-xs font-medium text-ai-accent">
-                      {TOTAL_SPOTS - SPOTS_TAKEN} of {TOTAL_SPOTS} spots remaining
+                      Now accepting design partners
                     </span>
                   </div>
 
