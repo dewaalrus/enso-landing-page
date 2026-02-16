@@ -17,7 +17,7 @@ const principles = [
   {
     name: 'Best practices baked in',
     subtitle: 'DECISIONS, NOT OPTIONS',
-    body: 'Note-takers give you transcripts. CRMs give you settings pages. Enso makes the decisions so reps do not have to. Prep, meet, follow up. Every workflow is intentional.',
+    body: 'Note-takers give you transcripts. CRMs give you settings pages. Enso encodes what good looks like so reps do not have to figure it out. Prep, meet, follow up. Every workflow is intentional.',
   },
 ]
 

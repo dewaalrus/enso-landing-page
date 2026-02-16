@@ -10,7 +10,7 @@ const sources = [
   { icon: Mail, label: 'Email' },
   { icon: CalendarDays, label: 'Calendar' },
   { icon: Mic, label: 'Meetings' },
-  { icon: Database, label: 'Salesforce' },
+  { icon: Database, label: 'CRM' },
 ]
 
 const surfaces = [
